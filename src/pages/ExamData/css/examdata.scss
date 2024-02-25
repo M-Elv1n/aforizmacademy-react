@@ -1,0 +1,25 @@
+.exdata {
+  margin-top: 140px;
+  &__img {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 670px;
+    }
+  }
+
+  @media screen and (max-width: (767px)) {
+    .exdata {
+      &__img {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

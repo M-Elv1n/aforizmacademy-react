@@ -1,0 +1,22 @@
+.exdata {
+  margin-top: 140px;
+}
+.exdata__img {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.exdata__img img {
+  width: 670px;
+}
+@media screen and (max-width: 767px) {
+  .exdata .exdata__img {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .exdata .exdata__img img {
+    width: 300px;
+  }
+}/*# sourceMappingURL=examdata.css.map */

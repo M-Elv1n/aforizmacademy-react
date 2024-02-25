@@ -1,0 +1,88 @@
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+.slides.fade {
+  display: block;
+}
+
+.slides img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.text-container_mob {
+  display: none;
+}
+
+.text-container button {
+  padding: 10px 35px;
+  cursor: pointer;
+}
+
+.text-container button a {
+  color: black;
+  text-decoration: none;
+}
+
+.text-container button:hover {
+  background-color: #d02c55;
+  transition: 0.3s;
+}
+
+.text-container button:hover a {
+  color: white;
+}
+
+.image-container:hover .text-container {
+  opacity: 1;
+}
+
+@media screen and (max-width: (767px)) {
+  //slider
+  .text-container {
+    display: none; /* Скрываем текст в десктопном режиме */
+  }
+  .text-container_mob {
+    display: block; /* Показываем текст в мобильном режиме */
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    opacity: 1; /* Убираем анимацию для мобильного режима */
+    font-size: 15px;
+    button{
+      padding: 6px;
+    }
+  }
+  //slider
+}
+
+@media screen and (max-width: (567px)) {
+  .text-container_mob {
+    bottom: 40px;
+  }
+}

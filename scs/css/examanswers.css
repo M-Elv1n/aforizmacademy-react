@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.exam__result p {
+  margin-top: 40px;
+  text-align: right;
+}
+.exam__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 21px;
+}
+.exam__info span {
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.exam__info--grade {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.exam__info--grade .grade {
+  display: flex;
+  gap: 10px;
+}
+.exam__info--grade .place {
+  display: flex;
+  gap: 10px;
+}
+.exam__info--grade hr {
+  width: 28%;
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.exam__subject {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+  border: 1px solid black;
+  grid-gap: 10px;
+  column-gap: 20px;
+}
+.exam__subject hr {
+  display: none;
+}
+.exam__subject h4 {
+  display: none;
+}
+.exam__subject--item {
+  display: flex;
+  margin-top: 100px;
+  gap: 10px;
+}
+.exam__subject--item__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.exam__subject--item__name--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exam__subject--item__name--container img {
+  width: 20px;
+}
+.exam__subject--item__name--img {
+  display: flex;
+  flex-direction: column;
+}
+.exam__subject--native {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exam__subject--native__close {
+  font-family: monospace; /* Использование моноширинного шрифта */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.exam__subject--native__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.exam__subject--matem__container {
+  font-family: monospace; /* Используем моноширинный шрифт для сохранения равного промежутка между символами */
+  white-space: pre-line; /* Позволяет сохранять переносы строк и пробелы */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  height: 93%; /* Установите желаемую высоту */
+}
+.exam__subject .native__close {
+  display: flex;
+  font-family: monospace; /* Используем моноширинный шрифт для сохранения равного промежутка между символами */
+  white-space: pre-line; /* Позволяет сохранять переносы строк и пробелы */
+  font-size: 21px;
+  gap: 4px;
+}
+.exam__subject--foreign {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exam__subject--foreign__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 77%;
+}
+
+table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .exam__subject--item__name {
+    display: none;
+  }
+  .exam__result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .exam__subject {
+    grid-template-columns: auto;
+  }
+  .exam__subject hr {
+    display: block;
+    margin: 20px 0;
+  }
+  .exam__subject h4 {
+    display: block;
+  }
+  .exam__subject--foreign__container {
+    gap: 22px;
+  }
+  .native__write {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=examanswers.css.map */

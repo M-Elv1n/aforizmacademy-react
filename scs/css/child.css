@@ -1,0 +1,20 @@
+.child {
+  margin-top: 100px;
+}
+.child__img {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.child__img img {
+  width: 500px;
+}
+@media screen and (max-width: 767px) {
+  .child .child__img {
+    justify-content: center;
+  }
+  .child .child__img img {
+    width: 300px;
+  }
+}/*# sourceMappingURL=child.css.map */

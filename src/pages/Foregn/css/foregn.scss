@@ -1,0 +1,23 @@
+.foreign {
+  margin-top: 100px;
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: (767px)) {
+    .foreign {
+      &__img {
+        justify-content: center;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

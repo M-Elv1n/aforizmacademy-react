@@ -1,0 +1,22 @@
+.prog {
+  margin-top: 100px;
+  &__img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    img {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: (767px)) {
+    .prog {
+      &__img {
+        justify-content: center;
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

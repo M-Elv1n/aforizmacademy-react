@@ -1,0 +1,54 @@
+.exam__answer{
+  margin-top: 200px;
+}
+
+.exam__container {
+  max-width: 860px;
+  margin: auto;
+
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  .error {
+    color: red;
+    // display: none;
+  }
+  #result {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  #result h2 {
+    margin-top: 0;
+  }
+  #student-info p {
+    margin: 5px 0;
+  }
+  #student-info p strong {
+    font-weight: bold;
+  }
+  #grades-list {
+    list-style: none;
+    padding: 0;
+  }
+  #grades-list li {
+    margin-bottom: 5px;
+  }
+}

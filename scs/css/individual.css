@@ -1,0 +1,22 @@
+.individual {
+  margin-top: 100px;
+}
+.individual__img {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.individual__img img,
+.individual__img video {
+  width: 500px;
+}
+@media screen and (max-width: 767px) {
+  .individual .individual__img {
+    justify-content: center;
+  }
+  .individual .individual__img img,
+  .individual .individual__img video {
+    width: 300px;
+  }
+}/*# sourceMappingURL=individual.css.map */

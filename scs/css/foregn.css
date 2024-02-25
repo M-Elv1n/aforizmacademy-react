@@ -1,0 +1,21 @@
+.foreign {
+  margin-top: 100px;
+}
+.foreign__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.foreign__img img {
+  width: 500px;
+}
+@media screen and (max-width: 767px) {
+  .foreign .foreign__img {
+    justify-content: center;
+  }
+  .foreign .foreign__img img {
+    width: 300px;
+  }
+}/*# sourceMappingURL=foregn.css.map */

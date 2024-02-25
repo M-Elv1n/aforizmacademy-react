@@ -1,0 +1,58 @@
+.lessons {
+  margin-top: 60px;
+}
+.lessons h1 {
+  text-align: center;
+}
+.lessons__container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.lessons__container--item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+}
+.lessons__container--item img {
+  width: 300px;
+  height: 400px;
+}
+.lessons__container--text {
+  padding: 15px;
+  cursor: pointer;
+}
+.lessons__container--text a {
+  color: black;
+}
+.lessons__container--text:hover {
+  transition: 0.3s;
+  background-color: #d02c55;
+}
+.lessons__container--text:hover a {
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .lessons .lessons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lessons .lessons__container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lessons .lessons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lessons .lessons__container {
+    justify-content: center !important;
+  }
+}/*# sourceMappingURL=lesson.css.map */
